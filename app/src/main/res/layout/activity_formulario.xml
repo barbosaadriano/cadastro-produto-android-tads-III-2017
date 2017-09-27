@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.adrianob.cadastrodeproduto.view.Formulario">
+
+    <TextView
+        android:layout_width="141dp"
+        android:layout_height="19dp"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Descrição do produto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <EditText
+        android:layout_width="362dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:id="@+id/txDescricao"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        />
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnSalvar"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:elevation="5dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txDescricao"
+        app:srcCompat="@android:drawable/ic_menu_save"
+
+        />
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btnCancelar"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:elevation="5dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txDescricao"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        app:srcCompat="@mipmap/logotipo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        />
+    <!-- teste -->
+
+</android.support.constraint.ConstraintLayout>
